@@ -12,7 +12,7 @@
 		FAD45BE2203C95C60015E506 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD45BDE203C95C60015E506 /* Movie.swift */; };
 		FAD45BE3203C95C60015E506 /* PriceCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD45BDF203C95C60015E506 /* PriceCode.swift */; };
 		FAD45BE4203C95C60015E506 /* Rental.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD45BE0203C95C60015E506 /* Rental.swift */; };
-		FAD45BE5203C95C60015E506 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD45BE1203C95C60015E506 /* Customer.swift */; };
+		FAD45BE5203C95C60015E506 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD45BE1203C95C60015E506 /* Statement.swift */; };
 		FAD45BE7203C95D00015E506 /* CustomerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD45BE6203C95D00015E506 /* CustomerTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +35,7 @@
 		FAD45BDE203C95C60015E506 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		FAD45BDF203C95C60015E506 /* PriceCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceCode.swift; sourceTree = "<group>"; };
 		FAD45BE0203C95C60015E506 /* Rental.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rental.swift; sourceTree = "<group>"; };
-		FAD45BE1203C95C60015E506 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		FAD45BE1203C95C60015E506 /* Statement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statement.swift; sourceTree = "<group>"; };
 		FAD45BE6203C95D00015E506 /* CustomerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,7 +82,7 @@
 				FAD45BDF203C95C60015E506 /* PriceCode.swift */,
 				FAD45BDE203C95C60015E506 /* Movie.swift */,
 				FAD45BE0203C95C60015E506 /* Rental.swift */,
-				FAD45BE1203C95C60015E506 /* Customer.swift */,
+				FAD45BE1203C95C60015E506 /* Statement.swift */,
 				FAD45BDC203C945E0015E506 /* Supporting Files */,
 			);
 			path = VideoStore;
@@ -230,7 +230,7 @@
 				FAD45BE3203C95C60015E506 /* PriceCode.swift in Sources */,
 				FAD45BE2203C95C60015E506 /* Movie.swift in Sources */,
 				FAD45BE4203C95C60015E506 /* Rental.swift in Sources */,
-				FAD45BE5203C95C60015E506 /* Customer.swift in Sources */,
+				FAD45BE5203C95C60015E506 /* Statement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
