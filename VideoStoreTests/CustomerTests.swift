@@ -27,8 +27,8 @@ class CustomerTests: XCTestCase {
     public func testSingleNewReleaseStatementTotals() {
         statement.add(rental: Rental(movie: newReleaseMovie1, daysRented: 3))
         statement.calculateRentalValues()
-        XCTAssertEqual(9, statement.getTotal())
-        XCTAssertEqual(2, statement.getFrequentRenterPoints())
+        XCTAssertEqual(9, statement.totalAmount)
+        XCTAssertEqual(2, statement.frequentRenterPoints)
     }
 
     public func testDualNewReleaseStatementTotals() {
@@ -36,16 +36,16 @@ class CustomerTests: XCTestCase {
         statement.add(rental: Rental(movie: newReleaseMovie2, daysRented: 3))
         
         statement.calculateRentalValues()
-        XCTAssertEqual(18, statement.getTotal())
-        XCTAssertEqual(4, statement.getFrequentRenterPoints())
+        XCTAssertEqual(18, statement.totalAmount)
+        XCTAssertEqual(4, statement.frequentRenterPoints)
         
     }
 
     public func testSingleChildrensStatementTotals() {
         statement.add(rental: Rental(movie: childrensMovie1, daysRented: 3))
         statement.calculateRentalValues()
-        XCTAssertEqual(1.5, statement.getTotal())
-        XCTAssertEqual(1, statement.getFrequentRenterPoints())
+        XCTAssertEqual(1.5, statement.totalAmount)
+        XCTAssertEqual(1, statement.frequentRenterPoints)
         
     }
 
@@ -53,8 +53,8 @@ class CustomerTests: XCTestCase {
         statement.add(rental: Rental(movie: childrensMovie1, daysRented: 3))
         statement.add(rental: Rental(movie: childrensMovie2, daysRented: 4))
         statement.calculateRentalValues()
-        XCTAssertEqual(4.5, statement.getTotal())
-        XCTAssertEqual(2, statement.getFrequentRenterPoints())
+        XCTAssertEqual(4.5, statement.totalAmount)
+        XCTAssertEqual(2, statement.frequentRenterPoints)
     }
 
     public func testMultipleRegularStatementTotals() {
@@ -62,8 +62,8 @@ class CustomerTests: XCTestCase {
         statement.add(rental: Rental(movie: regular2, daysRented: 2))
         statement.add(rental: Rental(movie: regular3, daysRented: 3))
         statement.calculateRentalValues()
-        XCTAssertEqual(7.5, statement.getTotal())
-        XCTAssertEqual(3, statement.getFrequentRenterPoints())
+        XCTAssertEqual(7.5, statement.totalAmount)
+        XCTAssertEqual(3, statement.frequentRenterPoints)
     }
     
     public func testMultipleRegularStatementFormat() {

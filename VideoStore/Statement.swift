@@ -4,8 +4,8 @@ public class Statement {
     
     public var customerName: String
     private var rentals: [Rental] = []
-    private var totalAmount: Double = 0
-    private var frequentRenterPoints: Int = 0
+    private(set) var totalAmount: Double = 0
+    private(set) var frequentRenterPoints: Int = 0
     
     private var header: String {
         return "Rental Record for \(customerName)\n"
@@ -21,14 +21,6 @@ public class Statement {
     
     public func add(rental: Rental) {
         rentals.append(rental)
-    }
-    
-    public func getTotal() -> Double {
-        return totalAmount
-    }
-    
-    public func getFrequentRenterPoints() -> Int {
-        return frequentRenterPoints
     }
     
     public func calculateRentalValues() {
